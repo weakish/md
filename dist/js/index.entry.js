@@ -303,10 +303,12 @@ __WEBPACK_IMPORTED_MODULE_4_showdown___default.a.extension('prettify', function 
                         return '<pre class="prettyprint linenums" style="font-size: 10px;line-height: 12px"><code' + codeClass + ' style="font-size: 10px;line-height: 12px">';
                     }
                     else {
-                        return ' <code class="prettyprint code-in-text"  style="font-size: 14px;line-height: 1.5em">';
+                        return ' <code class="prettyprint code-in-text" style="font-size: 14px;line-height: 1.5em">';
                     }
                 }).replace(/<img src="(\/editor\/\d{3}\/\d{3}\/\d+-[0-9a-f]+)"/gi, function(match, img) {
                   return '<img src="https://image-cdn.jqr.com/' + img + '"';
+                }).replace(/<a href="[^"]+">([^<]+)<\/a>/gi, function (match, linkText) {
+                  return linkText;
                 });
             }
         }];
