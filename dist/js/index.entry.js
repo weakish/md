@@ -305,6 +305,8 @@ __WEBPACK_IMPORTED_MODULE_4_showdown___default.a.extension('prettify', function 
                     else {
                         return ' <code class="prettyprint code-in-text"  style="font-size: 14px;line-height: 1.5em">';
                     }
+                }).replace(/<img src="(\/editor\/\d{3}\/\d{3}\/\d+-[0-9a-f]+)"/gi, function(match, img) {
+                  return '<img src="https://image-cdn.jqr.com/' + img + '"';
                 });
             }
         }];
