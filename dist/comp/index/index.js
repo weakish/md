@@ -67,7 +67,7 @@ Showdown.extension('prettify', function () {
                         return '<pre class="prettyprint linenums" style="font-size: 10px;line-height: 12px"><code' + codeClass + ' style="font-size: 10px;line-height: 12px">';
                     }
                     else {
-                        return ' <code class="prettyprint code-in-text"  style="font-size: 16px;line-height: 18px">';
+                        return ' <code class="prettyprint code-in-text"  style="font-size: 14px;line-height: 1.5em">';
                     }
                 });
             }

@@ -4,7 +4,8 @@
 .output {
   font-size: 14px;
   white-space: normal;
-  line-height: 1.7em;
+  line-height: 1.5em;
+  letter-spacing: 0.5px;
 }
 /* body {
     padding: 0;
@@ -38,8 +39,9 @@ h1, h2, h3, h4, h5, h6 {
 
 
 p {
-  margin-top: 1em;
-  margin-bottom: 1.7em;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  line-height: 1.5em;
   outline: 0px;
   color: rgb(51, 51, 51);
   white-space: normal;  
@@ -212,13 +214,6 @@ h1, h2, h3, h4, h5, h6 {
     margin: 0;
     padding-left: 3em;
   }
-  
-  ul, ol {
-    /* margin: 0;
-    padding: 0; */
-    /* padding-left: 40px; */
-  }
-  
   
   table {
     display: table;
