@@ -303,12 +303,14 @@ __WEBPACK_IMPORTED_MODULE_4_showdown___default.a.extension('prettify', function 
                         return '<pre class="prettyprint linenums" style="font-size: 10px;line-height: 12px"><code' + codeClass + ' style="font-size: 10px;line-height: 12px">';
                     }
                     else {
-                        return ' <code style="font-size: 14px;line-height: 1.5em">';
+                        return '<code style="font-size: 14px;line-height: 1.5em">';
                     }
                 }).replace(/<img src="(\/editor\/\d{3}\/\d{3}\/\d+-[0-9a-f]+)"/gi, function(match, img) {
                   return '<img src="https://image-cdn.jqr.com/' + img + '"';
                 }).replace(/<a href="[^"]+">([^<]+)<\/a>/gi, function (match, linkText) {
                   return linkText;
+                }).replace(/<blockquote>\s*<p>\s*机器人网原创文章，未经授权禁止转载。详情见转载须知\s*<\/p>\s*<\/blockquote>/gi, function (match) {
+                  return '<p><strong style="font-size: 14px; color: rgb(123, 12, 0)">本文系论智编译，转载请联系本​公众号获得授权。</strong></p>'
                 });
             }
         }];
